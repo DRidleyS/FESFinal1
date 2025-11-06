@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/7f6c139121.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project 1</title>
+</head>
+<body>
+    <nav>
+        <img src="https://www.gstatic.com/webp/gallery3/1.png" alt="Logo" class="nav__logo-img">
+        <div class="nav__logo">Is this good enough, David?</div>
+        <ul class ="nav__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="auth__links"><a href="login.html">Login</a></li>
+            <li class="auth__links"><a href="signUp.html">Sign Up</a></li>
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+            </li>
+            <li class="menu__list">
+              <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+            </li>
+            <li class="menu__list">
+              <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+            </li>
+            <li class="menu__list">
+              <a href="#contact" class="menu__link" onclick="closeMenu()">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="header__title">Welcome to My <span class="text--red">First Graded Final</span></h1>
+            <p class="header__subtitle">My name is Dorian, and my journey to excellence starts here.</p>
+            <a href="#about" class="header__cta-button">I'll Learn More, even if you don't.</a>
+            <form class="header__form">
+            <input type="email" class="header__email-input" placeholder="Enter your email" required>
+            <button type="submit" class="header__submit-button">Hire Me</button>
+            </form>
+        </div>
+        <img src="https://www.gstatic.com/webp/gallery3/5_webp_ll.png" alt="Header image" class="header__image">
+    </header>
+    <div class="footer-wave">
+  <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+    <path d="M0,30 C150,80 350,0 500,50 L500,0 L0,0 Z" fill="#eee" />
+  </svg>
+</div>
+    <main>
+        <section id="about" class="about">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__description">I am a dedicated student eager to learn and grow in the field of web development. This project marks the beginning of my journey towards mastering the skills needed to excel in frontend development.</p>
+            <div class="about__tech-stack">
+                <div class="tech-stack__item">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-stack__item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="tech-stack__item">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="tech-stack__item">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Vite</span>
+                </div>
+                <div class="tech-stack__item">
+                    <i class="fa-brands fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-stack__item">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python</span>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <h2 class="blog__title">Blog</h2>
+            <article class="blog__post">
+                <img src="https://www.gstatic.com/webp/gallery3/2_webp_ll.png" alt="Blog post image" class="blog__post-image">
+                <div class="blog__post-text">
+                    <h3 class="blog__post-title">My First Steps in Web Development</h3>
+                    <p class="blog__post-content">In this blog post, I share my experiences and challenges as I embark on my journey to learn web development. From HTML basics to CSS styling, every step is a learning opportunity.</p>
+                </div>
+            </article>
+        </section>
+        <div style="overflow: hidden;">
+        <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="height: 50px; width: 100%;">
+        <path d="M0,30 C150,80 350,0 500,50 L500,00 L0,0 Z" style="stroke: none; fill: #eee;"></path>
+        </svg>
+        </div>
+        <section id="pricing" class="pricing">
+            <h2 class="pricing__title">"$20 is $20"</h2>
+            <h3 class="pricing__subtitle">-A Brave Soul</h3>
+            <div class="pricing__plans">
+                <div class="pricing__plan">
+                    <h3 class="pricing__plan-title">Yes?</h3>
+                    <p class="pricing__plan-price">$60k/yr</p>
+                    <p class="pricing__plan-features">You have my best work.</p>
+                    <i class="fa-solid fa-trophy" style="color: #cd7f32; font-size: 2rem;"></i>
+                </div>
+                <div class="pricing__plan">
+                    <h3 class="pricing__plan-title">Yep.</h3>
+                    <p class="pricing__plan-price">$75k/yr</p>
+                    <p class="pricing__plan-features">You have my unwavering commitment to excellence.</p>
+                    <i class="fa-solid fa-trophy" style="color: #93aac5; font-size: 2rem;"></i>
+                </div>
+                <div class="pricing__plan">
+                    <h3 class="pricing__plan-title">YEAAAH!</h3>
+                    <p class="pricing__plan-price">$90k+/yr</p>
+                    <p class="pricing__plan-features">You have my unrelenting dedication and incorrigible resolution to succeed.</p>
+                    <i class="fa-solid fa-trophy" style="color: #f8bf20; font-size: 2rem;"></i>
+
+                </div>
+            </div>
+            </section>
+            <section id="contact" class="contact">
+            <h2 class="contact__title">Reach Out!</h2>
+
+            <div class="contact__methods">
+            <div class="contact__method">Email</div>
+            <div class="contact__info">
+            <p class="contact__info-text">dorianridley@gmail.com</p>
+            </div>
+            </div>
+
+            <div class="contact__methods">
+                <div class="contact__method">Phone</div>
+                <div class="contact__info">
+                <p class="contact__info-text">(707) 533-9389</p>
+                </div>
+            </div>
+            </section>
+            
+    </main>
+    <div class="footer-wave">
+  <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+    <path d="M0,30 C150,80 350,0 500,50 L500,0 L0,0 Z" fill="#eee" />
+  </svg>
+</div>
+    <footer class="footer">
+        <ul class="footer__nav-links">
+            <li>
+            <a href="#about">About</a>
+            <ul>
+                <li><a href="#about">Lorem ipsum</a></li>
+                <li><a href="#about">Dolor sit</a></li>
+                <li><a href="#about">Amet consectetur</a></li>
+                <li><a href="#about">Adipiscing elit</a></li>
+                <li><a href="#about">Sed do</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#blog">Blog</a>
+            <ul>
+                <li><a href="#blog">Lorem ipsum</a></li>
+                <li><a href="#blog">Dolor sit</a></li>
+                <li><a href="#blog">Amet consectetur</a></li>
+                <li><a href="#blog">Adipiscing elit</a></li>
+                <li><a href="#blog">Sed do</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#pricing">Pricing</a>
+            <ul>
+                <li><a href="#pricing">Lorem ipsum</a></li>
+                <li><a href="#pricing">Dolor sit</a></li>
+                <li><a href="#pricing">Amet consectetur</a></li>
+                <li><a href="#pricing">Adipiscing elit</a></li>
+                <li><a href="#pricing">Sed do</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#contact">Lorem ipsum</a></li>
+                <li><a href="#contact">Dolor sit</a></li>
+                <li><a href="#contact">Amet consectetur</a></li>
+                <li><a href="#contact">Adipiscing elit</a></li>
+                <li><a href="#contact">Sed do</a></li>
+            </ul>
+            </li>
+        </ul>
+        <p class="footer__text">&copy; 2024 Dorian's Journey to Excellence. All rights reserved.</p>
+    </footer>
+</body>
+</html>
